@@ -1,0 +1,58 @@
+<?php
+
+//Drivers for monitoring
+$rcmail_config['rc_monitor_drivers_list'] = array(
+	"memcache",
+	"mysql",
+	"imap",
+	"sieve",
+	"calendar",
+);
+
+// *********************************
+//	Calendar Driver
+$rcmail_config['rc_monitor_calendar_users'] = array(
+	array(
+		'user'=> 'user@domain.com', 
+		'pass'=>'pass123', 
+		),
+);
+
+#this config need the #USER# for replace by user in calendar_users
+$rcmail_config['rc_monitor_calendar_url'] = "http://local-owncloud/apps/calendar/caldav.php/calendars/#USER#/default%20calendar;";
+
+// *********************************
+// IMAP Driver
+$rcmail_config['rc_monitor_imap_users'] = array(
+				array(
+					'user'=> 'user@domain.com', 
+					'pass'=>'pass123',
+					'host'=>'imap.domain.com'),
+);
+
+// *********************************
+// MySQL Driver
+// List of dsn's to monitoring
+$rcmail_config['rc_monitor_mysql_dsn_list'] = array(
+				'db_dsnw' 		,
+//				'db_dsnr'
+);
+
+// *********************************
+// Sieve Driver
+$rcmail_config['rc_monitor_sieve_users'] = 	array(
+																							array(
+																								'user'=> 'user@domain.com', 
+																								'pass'=>'pass123', 
+																								'host'=>'imap.domain.com', // or host to connect sieve server
+																								'port' => 4190, //default
+																								'auth_type' => 'LOGIN',
+																							),
+																						);
+
+// *********************************
+// Memcache Driver
+// This driver uses a memcache_hosts config of roundcube
+
+
+?>
