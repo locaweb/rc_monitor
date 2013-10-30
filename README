@@ -37,6 +37,10 @@ To enable url for monitor, add the content to virtualhost:
 
 APACHE:
 
+<VirtualHost *:80>
+  .
+  .
+  .
     <Location /monitoring >
             order deny,allow
             deny from all
@@ -45,6 +49,10 @@ APACHE:
             RewriteCond %{REQUEST_URI} ^/monitoring$
             RewriteRule (.*) /plugins/rc_monitor/rc_monitor.php [L]
     </Location>
+  .
+  .
+  .
+</VirtualHost>
 
 On plugin directory, copy the config.inc.php.dist to config.inc.php and configure it!
 
