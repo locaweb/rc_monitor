@@ -11,7 +11,7 @@
 
 ## 0. INTRODUCTION
 
-This plugin makes a monitoring of resources of roundcube using it self core/libs ( try to authenticate in imap, execute a select in database, make write/read memcache test ) and expose results using a JSON.
+This plugin monitors roundcube resources and libs (trying to authenticate via imap, execute a database select, read and write from memcache) and expose them in JSON format.
 
 ## 1. REQUIREMENTS
 
