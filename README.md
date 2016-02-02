@@ -31,6 +31,14 @@ or clone with git...( git clone git@github.com:locaweb/rc_monitor.git )
 unzip rc_monitor.zip
 cd plugins/rc_monitor/
 
+Download the plugin and extract into plugin dir:
+
+cd roundcube/plugins/
+
+curl -L "https://github.com/locaweb/rc_monitor/archive/master.zip" -o rc_monitor.zip
+or clone with git...( git clone git@github.com:locaweb/rc_monitor.git )
+unzip rc_monitor.zip
+
 To enable url for monitor, add the content to virtualhost:
 ```
 
@@ -50,7 +58,9 @@ To enable url for monitor, add the content to virtualhost:
             RewriteRule (.*) /plugins/rc_monitor/rc_monitor.php [L]
     </Location>
 </VirtualHost>
+
 ```
+
 
 On plugin directory, copy the config.inc.php.dist to config.inc.php and configure it!
 
@@ -64,6 +74,7 @@ If you need access from other hosts, change the allow rule of Location.
 
 ## 3. LICENSE
 
+```
 Copyright (c) 2016 Thiago Coutinho <thiago@osfeio.com>
 <thiago.coutinho@locaweb.com.br>
 
@@ -78,7 +89,7 @@ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-
+``
 
 ## 4. AUTHOR
 
@@ -92,11 +103,3 @@ http://www.sitepoint.com/parsing-xml-with-simplexml/
 http://code.google.com/p/sabredav/wiki/WebDAVClient#Doing_a_PROPFIND_request
 http://www.ietf.org/rfc/rfc4791.txt
 http://php.net/memcache
-
-## 6. CONTRIBUTING
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
