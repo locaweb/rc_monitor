@@ -23,17 +23,6 @@ roundcube ~> 0.8.7
 
 Download the plugin and extract into plugin dir:
 
-cd roundcube/plugins/
-
-```
-curl -L "https://github.com/locaweb/rc_monitor/archive/master.zip" -o rc_monitor.zip
-or clone with git...( git clone git@github.com:locaweb/rc_monitor.git )
-unzip rc_monitor.zip
-cd plugins/rc_monitor/
-```
-
-Download the plugin and extract into plugin dir:
-
 ```
 cd roundcube/plugins/
 
