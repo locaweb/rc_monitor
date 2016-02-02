@@ -57,8 +57,10 @@ On plugin directory, copy the config.inc.php.dist to config.inc.php and configur
 
 Use your monitor from localhost to:
 
+```
 http://webmail.domain.com/monitoring
 http://webmail.domain.com/monitoring?functional=true {more tests and details}
+```
 
 If you need access from other hosts, change the allow rule of Location.
 
