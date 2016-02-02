@@ -11,8 +11,7 @@
 
 ## 0. INTRODUCTION
 
-RC_Monitor uses Roundcube Core to accomplish monitoring of communication from php application with dependencies.
-
+This plugin makes a monitoring of resources of roundcube using it self core/libs ( try to authenticate in imap, execute a select in database, make write/read memcache test ) and expose results using a JSON.
 
 ## 1. REQUIREMENTS
 
