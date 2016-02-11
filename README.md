@@ -67,8 +67,7 @@ If you need access from other hosts, change the allow rule of Location.
 ## 3. LICENSE
 
 ```
-Copyright (c) 2016 Thiago Coutinho <thiago@osfeio.com>
-<thiago.coutinho@locaweb.com.br>
+Copyright (c) 2016 Locaweb <opensource@locaweb.com.br>
 
 Permission to use, copy, modify, and distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
@@ -85,8 +84,8 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ## 4. AUTHOR
 
-RC_Monitor was developed by Thiago Coutinho in Locaweb
-(http://www.locaweb.com.br).
+RC_Monitor was developed by Thiago Coutinho <thiago.coutinho@locaweb.com.br>
+at Locaweb (http://www.locaweb.com.br).
 
 
 ## 5. REFERENCES
